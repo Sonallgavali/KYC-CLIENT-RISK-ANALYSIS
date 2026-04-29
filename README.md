@@ -1,9 +1,5 @@
 # 🔍 KYC Client Risk Dashboard — Power BI
 
-![Power BI](https://img.shields.io/badge/Power%20BI-F2C811?style=for-the-badge&logo=powerbi&logoColor=black)
-![DAX](https://img.shields.io/badge/DAX-0078D4?style=for-the-badge&logo=microsoft&logoColor=white)
-![Status](https://img.shields.io/badge/Status-Completed-brightgreen?style=for-the-badge)
-
 A two-page interactive Power BI dashboard for **Know Your Customer (KYC) compliance and AML risk monitoring**, built on a structured client risk dataset with 20+ fields covering risk scoring, sanctions, PEP status, country flags, and sectoral exposure.
 
 ---
@@ -11,7 +7,7 @@ A two-page interactive Power BI dashboard for **Know Your Customer (KYC) complia
 ## 📊 Dashboard Preview
 
 ### Page 1 — Executive Overview
-![Page 1](KYC-CLIENT-RISK-ANALYSIS/page1.png)
+![Page 1](KYC-CLIENT-RISK-ANALYSIS/blob/main/page1.png)
 
 ### Page 2 — Client Risk Register
 ![Page 2](assets/page2.png)
@@ -86,18 +82,6 @@ To provide compliance teams and risk officers with a centralized view of:
 
 ---
 
-## 🚀 How to Run
-
-1. Clone this repository
-```bash
-   git clone https://github.com/yourusername/kyc-risk-dashboard.git
-```
-2. Open `KYC_Risk_Dashboard.pbix` in **Power BI Desktop**
-3. Go to **Transform Data → Data Source Settings** and point to your own `kyc` data source
-4. Refresh the dataset
-5. Publish to Power BI Service if needed
-
----
 
 ## 💡 Key Insights from the Data
 
