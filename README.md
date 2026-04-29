@@ -11,7 +11,7 @@ A two-page interactive Power BI dashboard for **Know Your Customer (KYC) complia
 ## 📊 Dashboard Preview
 
 ### Page 1 — Executive Overview
-!(s)
+!(page1.png)
 
 ### Page 2 — Client Risk Register
 ![Page 2](assets/page2.png)
