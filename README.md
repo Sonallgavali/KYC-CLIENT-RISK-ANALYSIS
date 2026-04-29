@@ -56,5 +56,69 @@ To provide compliance teams and risk officers with a centralized view of:
 | `Low Risk Clients` | Measure | Count of low risk clients |
 
 ---
+## 📄 Pages
 
-## 📐 Data Model
+### Page 1 — Executive Overview
+| Visual | Fields Used |
+|--------|-------------|
+| KPI Cards (×6) | Total Clients, Low/Medium/High Risk Clients, Avg Risk Score, % High Risk |
+| Donut Chart | `risk_category` → Count of `client_id` |
+| Stacked Bar — Country | `country` × `risk_category` → Total Clients (Top 6) |
+| Bar Chart — Sector | `sector` → Avg Risk Score |
+| Bar Chart — Client Type | `client_type` → Sum of `sector_risk_score` |
+| Slicers | `country`, `sector` |
+
+### Page 2 — Client Risk Register
+| Visual | Fields Used |
+|--------|-------------|
+| KPI Cards (×4) | Filtered Clients, Avg Risk Score, % High Risk, Avg Ownership Opacity |
+| Detail Table | All 17 client columns with conditional formatting |
+| Slicers | `client_type`, `sector`, `risk_score` range |
+
+---
+
+## 🛠 Tools & Technologies
+
+- **Power BI Desktop** — report authoring
+- **DAX** — measures and calculated columns
+- **Power Query (M)** — data transformation
+- **Python / SQL** — data generation and prep
+
+---
+
+## 🚀 How to Run
+
+1. Clone this repository
+```bash
+   git clone https://github.com/yourusername/kyc-risk-dashboard.git
+```
+2. Open `KYC_Risk_Dashboard.pbix` in **Power BI Desktop**
+3. Go to **Transform Data → Data Source Settings** and point to your own `kyc` data source
+4. Refresh the dataset
+5. Publish to Power BI Service if needed
+
+---
+
+## 💡 Key Insights from the Data
+
+- **23.8%** of clients are classified as High Risk — above typical industry threshold of 15%
+- **Energy/Oil** and **Defense/Arms** sectors carry the highest average risk scores
+- **CH, SD, VE** are the top 3 countries by total client count with significant High Risk concentration
+- NGO and Financial Institution client types show elevated `sector_risk_score` totals
+
+---
+
+## 📌 Use Cases
+
+- AML (Anti-Money Laundering) compliance monitoring
+- Periodic KYC review prioritization
+- Regulatory reporting preparation (FATF, OFAC)
+- Risk committee dashboards
+
+---
+
+## 👤 Author
+
+Sonal Gavali
+Data Analyst | Risk & Compliance  
+[GitHub](https://github.com/Sonallgavali)
